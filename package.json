@@ -3,31 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.17.1",
-    "faker": "^4.1.0",
-    "pretender": "git+https://github.com/fuse-mars/pretender.git",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "react-redux": "^5.0.6",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
-    "redux": "^3.7.2",
-    "semantic-ui": "^2.2.13",
-    "semantic-ui-react": "^0.77.0"
+    "better-console": "^1.0.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-chmod": "^2.0.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-dedupe": "0.0.2",
+    "gulp-flatten": "^0.4.0",
+    "gulp-header": "^2.0.1",
+    "gulp-help": "^1.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-less": "^3.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-rtlcss": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.0",
+    "prompt-sui": "^3.2.1",
+    "require-dot-file": "^0.4.0",
+    "run-sequence": "^2.2.1",
+    "wrench-sui": "0.0.3",
+    "yamljs": "^0.3.0"
   },
   "scripts": {
-    "react:start": "react-scripts start",
-    "gulp:start": "gulp --gulpfile src/styles/semantic/gulpfile.js",
-    "start": "concurrently --kill-others 'npm run react:start' 'npm run gulp:start'",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "gulp --gulpfile src/styles/semantic/gulpfile.js"
   },
-  "devDependencies": {
-    "babel-eslint": "^8.1.2",
-    "concurrently": "^3.5.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-react": "^7.5.1"
-  }
+  "devDependencies": {}
 }
