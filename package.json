@@ -34,9 +34,9 @@
     "yamljs": "^0.3.0"
   },
   "scripts": {
-    "start": "gulp --gulpfile src/styles/semantic/gulpfile.js",
-    "clean": "gulp --gulpfile src/styles/semantic/gulpfile.js clean",
-    "build": "gulp --gulpfile src/styles/semantic/gulpfile.js build",
+    "start": "gulp --gulpfile src/semantic/gulpfile.js",
+    "clean": "gulp --gulpfile src/semantic/gulpfile.js clean",
+    "build": "gulp --gulpfile src/semantic/gulpfile.js build",
     "clean:build": "npm run clean && npm run build"
   },
   "devDependencies": {}
