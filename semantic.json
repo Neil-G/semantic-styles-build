@@ -8,12 +8,12 @@
       "themes": "src/themes/"
     },
     "output": {
-      "packaged": "dist/",
-      "uncompressed": "dist/components/",
-      "compressed": "dist/components/",
-      "themes": "dist/themes/"
+      "packaged": "build/",
+      "uncompressed": "build/components/",
+      "compressed": "build/components/",
+      "themes": "build/themes/"
     },
-    "clean": "dist/"
+    "clean": "build/"
   },
   "permission": false,
   "autoInstall": false,
