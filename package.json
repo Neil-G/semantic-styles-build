@@ -34,9 +34,12 @@
     "yamljs": "^0.3.0"
   },
   "scripts": {
-    "start": "gulp --gulpfile gulpfile.js",
+    "start": "npm run build && npm run watch",
+    "start:clean": "npm run clean && npm start",
+    "watch": "gulp --gulpfile gulpfile.js watch",
     "clean": "gulp --gulpfile gulpfile.js clean",
     "build": "gulp --gulpfile gulpfile.js build",
+    "build:css": "gulp --gulpfile gulpfile.js build-css",
     "clean:build": "npm run clean && npm run build"
   },
   "devDependencies": {}
