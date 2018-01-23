@@ -32,78 +32,16 @@ module.exports = {
       themes      : 'src/themes/'
     },
     output: {
-      packaged     : 'dist/',
-      uncompressed : 'dist/components/',
-      compressed   : 'dist/components/',
-      themes       : 'dist/themes/'
+      packaged     : 'build/',
+      uncompressed : 'build/components/',
+      compressed   : 'build/components/',
+      themes       : 'build/themes/'
     },
-    clean : 'dist/'
+    clean : 'build/'
   },
 
   // components to include in package
-  components: [
-
-    // global
-    'reset',
-    'site',
-
-    // elements
-    'button',
-    'container',
-    'divider',
-    'flag',
-    'header',
-    'icon',
-    'image',
-    'input',
-    'label',
-    'list',
-    'loader',
-    'rail',
-    'reveal',
-    'segment',
-    'step',
-
-    // collections
-    'breadcrumb',
-    'form',
-    'grid',
-    'menu',
-    'message',
-    'table',
-
-    // views
-    'ad',
-    'card',
-    'comment',
-    'feed',
-    'item',
-    'statistic',
-
-    // modules
-    'accordion',
-    'checkbox',
-    'dimmer',
-    'dropdown',
-    'embed',
-    'modal',
-    'nag',
-    'popup',
-    'progress',
-    'rating',
-    'search',
-    'shape',
-    'sidebar',
-    'sticky',
-    'tab',
-    'transition',
-
-    // behaviors
-    'api',
-    'form',
-    'state',
-    'visibility'
-  ],
+  components: require('./../../components.js'),
 
   // whether to load admin tasks
   admin: false,
