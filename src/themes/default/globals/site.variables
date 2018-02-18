@@ -331,6 +331,33 @@
 @pinkBorderColor   : @pinkTextColor;
 @brownBorderColor  : @brownTextColor;
 
+
+/*-------------------
+     Material Colors
+--------------------*/
+
+/*--- Red ---*/
+@red50:     rgb(255, 235, 238);
+@red100:    rgb(255, 205, 210);
+@red200:    rgb(239, 154, 154);
+@red300:    rgb(229, 115, 115);
+@red400:    rgb(239, 83, 80);
+@red500:    rgb(244, 67, 54);
+@red600:    rgb(229, 57, 53);
+@red700:    rgb(211, 47, 47);
+@red800:    rgb(198, 40, 40);
+@red900:    rgb(183, 28, 28);
+@redA100:   rgb(255, 138, 128);
+@redA200:   rgb(255, 82, 82);
+@redA400:   rgb(255, 23, 68);
+@redA700:   rgb(213, 0, 0);
+
+
+
+
+
+
+
 /*-------------------
      Alpha Colors
 --------------------*/
