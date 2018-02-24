@@ -27,6 +27,7 @@ module.exports = [
   "grid",
   // "menu",
   // "message",
+  "page",
   // "table",
 
 
