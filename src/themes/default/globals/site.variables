@@ -210,6 +210,12 @@
 @largeMonitorBreakpoint      : 1200px;
 @widescreenMonitorBreakpoint : 1920px;
 
+@mobileBreakpointColSuffix: sm;
+@tabletBreakpointColSuffix: md;
+@computerBreakpointColSuffix: lg;
+@largeMonitorBreakpointColSuffix: xl;
+@widescreenMonitorBreakpointColSuffix: xxl;
+
 /*-------------------
       Site Colors
 --------------------*/

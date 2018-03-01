@@ -1,5 +1,5 @@
 /*******************************
-             Grid
+             Breakpoints
 *******************************/
 
 /* Inherited From Site */
@@ -10,12 +10,15 @@
 // @largeMonitorBreakpoint
 // @widescreenMonitorBreakpoint
 
+// @mobileBreakpointColSuffix
+// @tabletBreakpointColSuffix
+// @computerBreakpointColSuffix
+// @largeMonitorBreakpointColSuffix
+// @widescreenMonitorBreakpointColSuffix
+
+
 /*******************************
-            Grid
+      Gutter
 *******************************/
 
-@mobileBreakpointColSuffix: sm;
-@tabletBreakpointColSuffix: md;
-@computerBreakpointColSuffix: lg;
-@largeMonitorBreakpointColSuffix: xl;
-@widescreenMonitorBreakpointColSuffix: xxl;
+@colGutterSize: 4px;
