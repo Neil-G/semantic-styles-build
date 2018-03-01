@@ -25,6 +25,7 @@ module.exports = [
   // "breadcrumb",
   // "form",
   "grid",
+  "layout",
   // "menu",
   // "message",
   "page",

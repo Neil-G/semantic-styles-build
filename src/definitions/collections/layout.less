@@ -1,0 +1,140 @@
+
+/*******************************
+            Theme
+*******************************/
+
+
+@type    : 'collection';
+@element : 'layout';
+
+@import (multiple) '../../theme.config';
+
+
+/*******************************
+          Helpers
+*******************************/
+
+
+.show-outline {
+  box-sizing: border-box;
+  border: 1px solid @showOutlineBorderColor;
+}
+
+/*******************************
+          Centering
+*******************************/
+
+.marg-auto {
+  display: block !important;
+  margin: auto !important;
+}
+
+.marg-auto-sides-only {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/*******************************
+          Margin Spacing
+*******************************/
+
+.generate-vertical-margin-spacing(@n: 1) when (@n =< 18) {
+  .top-marg-@{n} { .margin-top: @n*12px !important; }
+  .bottom-marg-@{n} { .margin-bottom: @n*12px !important; }
+  .generate-vertical-margin-spacing((@n + 1))
+}
+
+.generate-vertical-margin-spacing();
+
+/*******************************
+          Padding Spacing
+*******************************/
+
+
+/*******************************
+          Width
+*******************************/
+
+.full-width {
+  width: 100% !important;
+  display: block;
+}
+
+/*******************************
+          Text
+*******************************/
+
+.text-center { text-align: center !important; }
+
+.text-right { text-align: right !important; }
+
+
+/*******************************
+          Row
+*******************************/
+
+/* Direction */
+
+.row.columns { flex-direction: column; }
+
+.row.reverse { flex-direction: row-reverse; }
+
+.row.reverse-columns { flex-direction: column-reverse; }
+
+/* Wrap */
+
+.row.no-wrap { flex-wrap: nowrap; }
+
+.row.wrap-reverse { flex-wrap: wrap-reverse; }
+
+/*
+  Justify Content (alignment along main axis)
+  helps distribute extra space
+*/
+
+.just-end { justify-content: center; }
+
+.just-cent { justify-content: center; }
+
+.just-spcbtwn { justify-content: space-between; }
+
+.just-spcarnd { justify-content: space-between; }
+
+.just-spceven { justify-content: space-between; }
+
+.just-end { justify-content: center; }
+
+.just-cent { justify-content: center; }
+
+.just-spcbtwn { justify-content: space-between; }
+
+.just-spcarnd { justify-content: space-between; }
+
+/* Align Items (alignment along cross axis) */
+
+.align-i-end { align-items: space-between; }
+
+.align-i-cent { align-items: space-between; }
+
+.align-i-base { align-items: space-between; }
+
+.align-i-stretch { align-items: space-between; }
+
+/*  Align individual lines given extra space in cross axis */
+
+.align-c-end { align-content: flex-end; }
+
+.align-c-cent { align-content: center; }
+
+.align-c-spcbtwn { align-content: space-between; }
+
+.align-c-spcarnd { align-content: space-around; }
+
+.align-c-stretch { align-content: stretch; }
+
+
+
+/*******************************
+          Responsive
+*******************************/
