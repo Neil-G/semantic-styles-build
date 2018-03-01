@@ -28,6 +28,7 @@ module.exports = [
   // "menu",
   // "message",
   "page",
+  "section",
   // "table",
 
 
