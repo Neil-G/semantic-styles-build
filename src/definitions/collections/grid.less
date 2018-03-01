@@ -18,41 +18,71 @@
 @import (multiple) '../../theme.config';
 
 
+/*******************************
+            Row
+*******************************/
 
-// function to generate width attribute
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+/*******************************
+            Gutter
+*******************************/
+
+.column-gutter {
+  padding: 0 @colGutterSize;
+}
+
+.no-gutter {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+/*******************************
+  Generate Columns Helper Function
+*******************************/
+
 .generate-col-width(@cols-wide) {
   width: (@cols-wide/@columnCount)*100%;
 }
 
 
-// Generate Generic Columns
+/*******************************
+        Generate Columns
+*******************************/
+
 .generate-columns(@n: 1) when (@n =< @columnCount) {
-  .col-@{n} { .generate-col-width(@n); }
+  .col-@{n} { .generate-col-width(@n); .column-gutter; }
   .generate-columns((@n + 1));
 }
 
-// Generate specialized column values
 .generate-columns(@n) when (@n = @columnCount) {
-  .col-full { .generate-col-width(@n); }
+  .col-full { .generate-col-width(@n); .column-gutter; }
   .col-none { display: none; }
 }
 
-// Generate Responsive Columns
+.generate-columns();
+
+/*******************************
+    Generate Responsive Columns
+*******************************/
+
 .generate-responsive-columns(@n, @breakpointSuffix) when (@n =< @columnCount) {
-  .col-@{breakpointSuffix}-@{n} { .generate-col-width(@n); }
+  .col-@{breakpointSuffix}-@{n} { .generate-col-width(@n); .column-gutter; }
   .generate-responsive-columns((@n + 1), @breakpointSuffix);
 }
 
 .generate-responsive-columns(@n, @breakpointSuffix) when (@n = @columnCount) {
-  .col-@{breakpointSuffix}-full { .generate-col-width(@n); }
+  .col-@{breakpointSuffix}-full { .generate-col-width(@n); .column-gutter; }
   .col-@{breakpointSuffix}-none { display: none; }
 }
 
 
-// Generate Generic Columns
-.generate-columns();
-
-// Generate Responsive Columns
 @media screen and (max-width: @mobileBreakpoint) {
   .generate-responsive-columns(1, @mobileBreakpointColSuffix)
 }
