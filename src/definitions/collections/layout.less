@@ -40,8 +40,8 @@
 *******************************/
 
 .generate-vertical-margin-spacing(@n: 1) when (@n =< 18) {
-  .top-marg-@{n} { .margin-top: @n*12px !important; }
-  .bottom-marg-@{n} { .margin-bottom: @n*12px !important; }
+  .top-marg-@{n} { margin-top: @n*12px !important; }
+  .bottom-marg-@{n} { margin-bottom: @n*12px !important; }
   .generate-vertical-margin-spacing((@n + 1))
 }
 
