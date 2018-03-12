@@ -28,9 +28,11 @@ module.exports = [
   "layout",
   // "menu",
   // "message",
+  "navigation",
   "page",
   "section",
   // "table",
+  // "typography",
 
 
 

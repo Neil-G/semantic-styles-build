@@ -20,6 +20,14 @@
 @googleProtocol    : 'https://';
 @googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
 
+
+/*-------------------
+      Global Layout
+--------------------*/
+
+@topNavHeight     : 80px;
+
+
 /*-------------------
       Base Sizes
 --------------------*/
@@ -360,8 +368,13 @@
 
 
 
+/*-----------------------------------------
 
+Get Flat Colors from:
 
+http://bootflat.github.io/color-picker.html
+
+-------------------------------------------*/
 
 
 /*-------------------

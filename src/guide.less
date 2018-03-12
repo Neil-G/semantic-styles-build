@@ -1,0 +1,97 @@
+/*--------------
+
+LIST
+
+A section is displays relatively little information with little to no interactivity
+(smaller and less rich/interactive than a card)
+Should correspond to a section snippet or component
+
+Global list styling
+
+ul {
+
+}
+
+li {
+
+}
+
+
+// specific list
+.ul--example {
+
+  li {
+    // list items should be simple, use best judgement
+  }
+
+}
+
+
+---------------*/
+
+
+/*--------------
+
+CARD
+
+A card is some visual chunk of information that shows information pertaining to one thing
+(more than a list item, less than a section)
+Should correspond with  card snippet or component
+
+
+.card {
+  // will hold global card styles such as barder-radius, etc.
+}
+
+.cards-container--example {          // wraps all the cards
+
+  .card-wrapper--example {           // wraps an individual card
+
+    .card--example {                 // the card
+
+      card-info-- variable being display, represent some data being shown to user
+
+      card-item-- non-variable item, helper for data, like a label
+
+      card-[header|body|section|footer]-- same architecture as the html page itself, semantically
+
+    }
+
+  }
+
+}
+
+
+---------------*/
+
+
+
+/*--------------
+
+Section
+
+A section is a chunk of the page that may hold information about different things
+(larger and less focused than a card)
+Will usually comprise of a bunch of other components
+Should correspond to a section snippet or component
+
+.section {
+  // will hold global card styles such as barder-radius, etc.
+}
+
+.sections-container--example {          // wraps all the sections
+
+  .section-wrapper--example {           // wraps an individual section
+
+    .section--example {                 // the section
+
+      section-[header|body|section|footer]-- same architecture as the html page itself, semantically
+
+    }
+
+  }
+
+}
+
+
+---------------*/

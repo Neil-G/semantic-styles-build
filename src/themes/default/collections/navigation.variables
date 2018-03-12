@@ -1,0 +1,44 @@
+/*******************************
+             Navigation
+*******************************/
+
+/* Inherited From Site */
+
+
+// @topNavHeight
+
+
+/*******************************
+  TopNav
+*******************************/
+
+@topNavBoxShadow: 0px 3px 10px -6px rgba(0,0,0,0.75);
+@topNavBgColor: white;
+
+
+/*******************************
+  Mobile Hamburger Menu Button
+*******************************/
+
+@hamburgerButtonWidth                  :   3.8rem;
+@hamburgerButtonVerticalBarDistance    :   1rem;
+@hamburgerButtonDistanceFromTop        :   12;
+@hamburgerButtonDistanceFromRight      :   12;
+@hamburgerButtonActiveColor            :   white;
+@hamburgerButtonBarThickness           :   0.3rem;
+
+
+/*******************************
+   Mobile Nav Menu
+*******************************/
+
+@mobileNavMenuBackground               :  #6C7A89;
+@mobileNavMenuColor                    :  white;
+
+
+/*******************************
+    Scroll To Top Button
+*******************************/
+
+@scrollToTopColor                      : black;
+@scrollToTopSize                       : 2rem;
