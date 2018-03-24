@@ -52,6 +52,11 @@
 
 // TODO: extract to variables
 .button--hamburger-menu-toggle {
+
+  @media (min-width: @tabletBreakpoint) {
+    display: none;
+  }
+
   -webkit-transition: 0.1s -webkit-transform linear;
   transition: 0.1s -webkit-transform linear;
   transition: 0.1s transform linear;
@@ -126,6 +131,11 @@
 *******************************/
 
 .nav-menu--mobile {
+
+  @media (min-width: @tabletBreakpoint) {
+    display: none;
+  }
+  
   z-index: 1000;
   position: fixed;
   top: 0;
